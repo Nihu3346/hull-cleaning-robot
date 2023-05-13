@@ -1,9 +1,7 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Navbar from "../Navbar/Navbar";
-import Slideshow from "../Slideshow/Slideshowtext";
-import "./Particle.css"
+import "./Particle.css";
 
 const Particle = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -17,6 +15,8 @@ const Particle = () => {
 
   return (
     <>
+      {/* <div className="particle-box"> */}
+      <div style={{ height: "25vh" }}>
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -55,9 +55,9 @@ const Particle = () => {
             number: {
               density: {
                 enable: true,
-                area: 800,
+                area: 100, // changed from 800
               },
-              value: 80,
+              value: 20, // changed from 80
             },
             opacity: {
               value: 0.5,
@@ -67,18 +67,23 @@ const Particle = () => {
             },
             size: {
               value: { min: 1, max: 5 },
+              random: true,
+              anim: {
+                enable: false,
+                speed: 40,
+                size_min: 0.1,
+                sync: false,
+              },
             },
           },
           detectRetina: true,
         }}
       />
+      </div>
+
+      {/* </div> */}
     </>
   );
 };
 
 export default Particle;
-
-
-
-
-

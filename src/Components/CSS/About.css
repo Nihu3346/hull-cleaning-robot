@@ -1,0 +1,48 @@
+ .title span:last-child {
+  color: #20b5cd;
+}
+ .title span {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 95px;
+}
+.team-inner .title span:last-child {
+  color: #20b5cd;
+}
+.team-inner .title span {
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 95px;
+}
+.hor-line {
+  border-top: 6px solid #20b5cd;
+  width: 50px;
+}
+.team-container {
+  background-color: #202A3B;
+}
+.our-values-container {
+  background-color: #fff;
+}
+.our-values-inner {
+  min-height: auto;
+  padding: 60px 150px 0;
+  margin: 0 auto;
+  position: relative;
+}
+.team-inner {
+  min-height: auto;
+  padding: 40px 150px 0;
+  margin: 0 auto;
+  position: relative;
+}
+.cards {
+  min-height: auto;
+  padding: 40px 0px 0;
+}
+.row {
+  padding: 40px 10px 0;
+}

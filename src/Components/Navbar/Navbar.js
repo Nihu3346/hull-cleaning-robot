@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import AdbIcon from "@mui/icons-material/Adb";
+import { Link } from "react-router-dom";
 
 const pages = [
   "Homepage",
@@ -55,9 +56,9 @@ const Navbar = () => {
             <Box
               sx={{ ml: 15, flexGrow: 1, display: { xs: "none", md: "flex" } }}
             >
-              {pages.map((page) => (
+              <Link to="/" style={{ textDecoration: 'none' }}>
                 <Button
-                  key={page}
+                  key="Home"
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,
@@ -69,9 +70,26 @@ const Navbar = () => {
                     },
                   }}
                 >
-                  {page}
+                  Home
                 </Button>
-              ))}
+                </Link>
+                <Link to="/aboutus" style={{ textDecoration: 'none' }}>
+                <Button
+                  key="aboutus"
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    mx: 2,
+                    color: "white",
+                    display: "block",
+                    ":hover": {
+                      color: "primary.main",
+                    },
+                  }}
+                >
+                  About Us
+                </Button>
+                </Link>
             </Box>
           </Toolbar>
         </Container>
