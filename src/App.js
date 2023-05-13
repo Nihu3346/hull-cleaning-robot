@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import MainPage from './Components/MainPage';
+import Navbar from './Components/Navbar/Navbar';
+import Particle from './Components/Particle/Particle';
+import Slideshowtext from './Components/Slideshow/Slideshowtext';
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
+      <Particle />
+      <Navbar />
+      <Slideshowtext />
     </div>
   );
 }
