@@ -29,11 +29,15 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="sticky" style={{ backgroundColor: "#ffffff" }}>
         <Container maxWidth="xl">
-          <Toolbar disableGutters sx={{ m: 5 }}>
+          <Toolbar disableGutters sx={{ mx: 5, my: 3 }}>
             <AdbIcon
-              sx={{ display: { xs: "none", md: "flex" }, mr: 1, ml: 5 }}
+              sx={{
+                display: { xs: "none", md: "flex", color: "black" },
+                mr: 1,
+                ml: 5,
+              }}
             />
             <Typography
               variant="h6"
@@ -46,7 +50,7 @@ const Navbar = () => {
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
-                color: "inherit",
+                color: "black",
                 textDecoration: "none",
               }}
             >
@@ -56,14 +60,13 @@ const Navbar = () => {
             <Box
               sx={{ ml: 15, flexGrow: 1, display: { xs: "none", md: "flex" } }}
             >
-              <Link to="/" style={{ textDecoration: 'none' }}>
+              <Link to="/" style={{ textDecoration: "none" }}>
                 <Button
                   key="Home"
                   onClick={handleCloseNavMenu}
                   sx={{
-                    my: 2,
                     mx: 2,
-                    color: "white",
+                    color: "black",
                     display: "block",
                     ":hover": {
                       color: "primary.main",
@@ -72,15 +75,14 @@ const Navbar = () => {
                 >
                   Home
                 </Button>
-                </Link>
-                <Link to="/aboutus" style={{ textDecoration: 'none' }}>
+              </Link>
+              <Link to="/aboutus" style={{ textDecoration: "none" }}>
                 <Button
                   key="aboutus"
                   onClick={handleCloseNavMenu}
                   sx={{
-                    my: 2,
                     mx: 2,
-                    color: "white",
+                    color: "black",
                     display: "block",
                     ":hover": {
                       color: "primary.main",
@@ -89,7 +91,7 @@ const Navbar = () => {
                 >
                   About Us
                 </Button>
-                </Link>
+              </Link>
             </Box>
           </Toolbar>
         </Container>

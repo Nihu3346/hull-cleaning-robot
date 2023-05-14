@@ -5,6 +5,7 @@ import Particle from "./Components/Particle/Particle";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./Components/Navbar/Footer";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUS />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
