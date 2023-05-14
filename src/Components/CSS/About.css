@@ -46,3 +46,17 @@
 .row {
   padding: 40px 10px 0;
 }
+.card-title{
+  font-weight: 700;
+    font-size: 36px;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.card-content{
+  font-size: 22px;
+  line-height: 35px;
+  color: #999;
+}
+    

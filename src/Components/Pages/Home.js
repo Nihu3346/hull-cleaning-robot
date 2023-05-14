@@ -8,6 +8,11 @@ import hullcleaner from "../Images/hullcleaner.jpg"
 import robo from "../Images/robo.png"
 import marine from "../Images/marine.png"
 import { Grid, Typography, CardContent, Card } from "@mui/material";
+import InfoPanelA from "./InfoPanel-a";
+import InfoPanelB from "./InfoPanel-b";
+import "./../CSS/InfoPanel.css";
+import AboutUS from "./AboutUs";
+import InfoPanelD from "./InfoPage-d";
 
 const spanStyle = {
   padding: "50px",
@@ -129,8 +134,19 @@ const Home = () => {
         and operators."
         imageOnLeft={false}
       />
+      <div className="panel-b">
+          <InfoPanelB />
+        </div>
+        <div className="panel-d">
+          <InfoPanelD />
+        </div>
+        <div className="panel-a">
+          <InfoPanelA />
+        </div>
+        <div className="panel-c">
+          <AboutUS />
+        </div>
     </div>
   );
 };
-
 export default Home;
