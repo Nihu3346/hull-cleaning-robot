@@ -4,6 +4,10 @@ import "react-slideshow-image/dist/styles.css";
 import ship3 from "../Images/ship3.png";
 import ship5 from "../Images/ship5.jpg";
 import ship6 from "../Images/ship6.jpg";
+import hullcleaner from "../Images/hullcleaner.jpg"
+import robo from "../Images/robo.png"
+import marine from "../Images/marine.png"
+import { Grid, Typography, CardContent, Card } from "@mui/material";
 
 const spanStyle = {
   padding: "50px",
@@ -41,6 +45,36 @@ const slideImages = [
   },
 ];
 
+function InformationSection({ image, title, description, imageOnLeft }) {
+  return (
+    <Card
+      style={{
+        borderRadius: "10px",
+        border: "2px solid #e0e0e0",
+        boxShadow: "none",
+        maxWidth: "90%",
+        margin: "auto",
+        marginTop: "45px",
+        marginBottom: "45px",
+      }}
+    >
+      <CardContent>
+        <Grid container spacing={2} alignItems="center">
+          <Grid item xs={12} md={6} order={imageOnLeft ? 1 : 2}>
+            <img src={image} alt={title} style={{ width: "100%" }} />
+          </Grid>
+          <Grid item xs={12} md={6} order={imageOnLeft ? 2 : 1}>
+            <Typography variant="h5" sx={{ textAlign: "center", my: 1  }}>{title}</Typography>
+            <Typography variant="body1" sx={{ textAlign: "justify" }}>
+              {description}
+            </Typography>
+          </Grid>
+        </Grid>
+      </CardContent>
+    </Card>
+  );
+}
+
 const Home = () => {
   return (
     <div className="slide-container">
@@ -55,62 +89,46 @@ const Home = () => {
           </div>
         ))}
       </Fade>
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
-        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
-        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
-        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
-        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-        luctus, metus
-      </p>
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
-        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
-        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
-        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
-        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-        luctus, metus
-      </p>
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
-        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
-        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
-        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
-        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-        luctus, metus
-      </p>
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
-        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
-        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
-        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
-        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-        luctus, metus
-      </p>
+
+      <InformationSection
+        image={hullcleaner}
+        title="Background"
+        description="Marine vessels are constantly exposed to harsh environmental conditions, 
+        such as saltwater, marine growth, and debris, which can accumulate on the hull and cause 
+        increased drag, fuel consumption, and maintenance costs. Traditional hull cleaning methods, 
+        such as diving or dry-docking, are time-consuming, costly, and can potentially harm the environment. 
+        The Hull Cleaning Robot technology provides a safe, efficient, and eco-friendly solution to this 
+        problem. By utilizing advanced algorithms and state-of-the-art cleaning equipment, 
+        the robot can clean the hull of a vessel while it's still in the water, reducing downtime 
+        and increasing efficiency. With the Hull Cleaning Robot, marine vessels can maintain optimal 
+        performance and reduce their environmental impact, making it an essential technology for the marine industry."
+        imageOnLeft={false}
+      />
+
+      <InformationSection
+        image={robo}
+        title="Economic Benefits"
+        description="Using hull cleaning robots instead of conventional techniques offers several economic benefits. 
+        Firstly, it reduces the downtime of the vessel, as the cleaning process is much faster and more efficient. 
+        This means that the vessel can return to operations sooner, resulting in increased productivity and revenue. 
+        Additionally, hull cleaning robots are more cost-effective in the long run as they reduce the need for drydocking, 
+        which is an expensive and time-consuming process. By eliminating the need for drydocking, vessel owners can save a 
+        significant amount of money on maintenance costs. Furthermore, using hull cleaning robots helps to improve fuel efficiency, 
+        which can result in significant cost savings over time. Overall, investing in hull cleaning robots can result in significant 
+        economic benefits for vessel owners and operators."
+        imageOnLeft={true}
+      />
+
+      <InformationSection
+        image={marine}
+        title="Marine Biodiversity"
+        description="Hull cleaning robots are a modern technology that offers economic and environmental benefits 
+        over conventional hull cleaning techniques. They help preserve marine biodiversity by reducing the use of toxic 
+        chemicals and preventing the spread of invasive species. By utilizing advanced cleaning techniques, these robots 
+        also improve vessel performance and reduce fuel consumption, leading to significant cost savings for ship owners 
+        and operators."
+        imageOnLeft={false}
+      />
     </div>
   );
 };
