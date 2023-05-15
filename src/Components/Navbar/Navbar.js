@@ -1,103 +1,183 @@
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import AdbIcon from "@mui/icons-material/Adb";
 import {
   AppBar,
   Box,
-  Button,
-  Container,
+  CssBaseline,
+  Divider,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
   Toolbar,
   Typography,
+  Button,
 } from "@mui/material";
-import React from "react";
-import AdbIcon from "@mui/icons-material/Adb";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const pages = [
-  "Homepage",
-  "Our Algorithms",
-  "Get a Quote",
-  "About us",
-  "Contact us",
-  "Careers",
-  "Find us on Linkdin",
+const drawerWidth = 240;
+
+const navItems = [
+  { name: "Home", link: "/" },
+  { name: "About Us", link: "/aboutus" },
 ];
 
-const Navbar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+const DrawerAppBar = (props) => {
+  const { window } = props;
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const handleDrawerToggle = () => {
+    setMobileOpen((prevState) => !prevState);
   };
 
-  return (
-    <>
-      <AppBar position="sticky" style={{ backgroundColor: "#ffffff" }}>
-        <Container maxWidth="xl">
-          <Toolbar disableGutters sx={{ mx: 5, my: 3 }}>
-            <AdbIcon
-              sx={{
-                display: { xs: "none", md: "flex", color: "black" },
-                mr: 1,
-                ml: 5,
-              }}
-            />
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "black",
-                textDecoration: "none",
-              }}
-            >
-              LOGO
-            </Typography>
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <Box
+        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+      >
+        <AdbIcon />
+        <Typography
+          variant="h6"
+          sx={{
+            my: 2,
+            fontFamily: "monospace",
+            fontWeight: 700,
+            color: "black",
+          }}
+        >
+          LOGO
+        </Typography>
+      </Box>
 
-            <Box
-              sx={{ ml: 15, flexGrow: 1, display: { xs: "none", md: "flex" } }}
+      <Divider sx={{ backgroundColor: "black" }} />
+      <List>
+        {navItems.map((item) => (
+          <ListItem key={item.name}>
+            <ListItemButton
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                "&:hover": {
+                  backgroundColor: "#ADDFFF",
+                  // cursor: "pointer",
+                },
+              }}
             >
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <Button
-                  key="Home"
-                  onClick={handleCloseNavMenu}
+              <Link to={item.link} style={{ textDecoration: "none" }}>
+                <ListItemText
                   sx={{
-                    mx: 2,
                     color: "black",
-                    display: "block",
-                    ":hover": {
-                      color: "primary.main",
-                    },
                   }}
-                >
-                  Home
-                </Button>
+                  primary={item.name}
+                />
               </Link>
-              <Link to="/aboutus" style={{ textDecoration: "none" }}>
-                <Button
-                  key="aboutus"
-                  onClick={handleCloseNavMenu}
-                  sx={{
-                    mx: 2,
-                    color: "black",
-                    display: "block",
-                    ":hover": {
-                      color: "primary.main",
-                    },
-                  }}
-                >
-                  About Us
-                </Button>
-              </Link>
-            </Box>
-          </Toolbar>
-        </Container>
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
+
+  return (
+    <Box sx={{ display: "flex" }}>
+      <CssBaseline />
+      <AppBar component="nav" style={{ backgroundColor: "#ffffff" }}>
+        <Toolbar>
+          <IconButton
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <AdbIcon
+            sx={{
+              display: { xs: "none", md: "flex", color: "black" },
+              mr: 1,
+              ml: 5,
+            }}
+          />
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              color: "black",
+            }}
+          >
+            LOGO
+          </Typography>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <Button
+                key="Home"
+                sx={{
+                  color: "black",
+                  ":hover": {
+                    color: "primary.main",
+                  },
+                }}
+              >
+                Home
+              </Button>
+            </Link>
+            <Link to="/aboutus" style={{ textDecoration: "none" }}>
+              <Button
+                key="aboutus"
+                sx={{
+                  color: "black",
+                  ":hover": {
+                    color: "primary.main",
+                  },
+                }}
+              >
+                About Us
+              </Button>
+            </Link>
+          </Box>
+        </Toolbar>
       </AppBar>
-    </>
+      <Box component="nav">
+        <Drawer
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Better open performance on mobile.
+          }}
+          sx={{
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </Box>
+    </Box>
   );
 };
 
-export default Navbar;
+DrawerAppBar.propTypes = {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
+};
+
+export default DrawerAppBar;

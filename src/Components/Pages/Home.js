@@ -7,12 +7,13 @@ import ship6 from "../Images/ship6.jpg";
 import hullcleaner from "../Images/hullcleaner.jpg"
 import robo from "../Images/robo.png"
 import marine from "../Images/marine.png"
-import { Grid, Typography, CardContent, Card } from "@mui/material";
+import { Grid, Typography, CardContent, Card, Box } from "@mui/material";
 import InfoPanelA from "./InfoPanel-a";
 import InfoPanelB from "./InfoPanel-b";
-import "./../CSS/InfoPanel.css";
 import AboutUS from "./AboutUs";
 import InfoPanelD from "./InfoPage-d";
+import "./../CSS/InfoPanel.css";
+
 
 const spanStyle = {
   padding: "50px",
@@ -82,7 +83,10 @@ function InformationSection({ image, title, description, imageOnLeft }) {
 
 const Home = () => {
   return (
-    <div className="slide-container">
+    <Box sx={{
+        flexGrow: 1,
+        mt: 8
+      }}>
       <Fade>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
@@ -146,7 +150,7 @@ const Home = () => {
         <div className="panel-c">
           <AboutUS />
         </div>
-    </div>
+    </Box>
   );
 };
 export default Home;
