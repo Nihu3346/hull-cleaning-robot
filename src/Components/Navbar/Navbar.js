@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import AdbIcon from "@mui/icons-material/Adb";
+import "../CSS/Navbar.css";
+
 import {
   AppBar,
   Box,
@@ -86,7 +88,7 @@ const DrawerAppBar = (props) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex" }} className="responsive-appbar">
       <CssBaseline />
       <AppBar component="nav" style={{ backgroundColor: "#ffffff" }}>
         <Toolbar>
@@ -155,7 +157,7 @@ const DrawerAppBar = (props) => {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },
@@ -173,10 +175,6 @@ const DrawerAppBar = (props) => {
 };
 
 DrawerAppBar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window: PropTypes.func,
 };
 

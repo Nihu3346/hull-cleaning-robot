@@ -1,19 +1,19 @@
+import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import hullcleaner from "../Images/hullcleaner.jpg";
+import marine from "../Images/marine.jpg";
+import robo from "../Images/robo.png";
 import ship3 from "../Images/ship3.png";
 import ship5 from "../Images/ship5.jpg";
 import ship6 from "../Images/ship6.jpg";
-import hullcleaner from "../Images/hullcleaner.jpg"
-import robo from "../Images/robo.png"
-import marine from "../Images/marine.png"
-import { Grid, Typography, CardContent, Card, Box } from "@mui/material";
-import InfoPanelA from "./InfoPanel-a";
-import InfoPanelB from "./InfoPanel-b";
+import "./../CSS/InfoPanel.css";
 import AboutUS from "./AboutUs";
 import InfoPanelD from "./InfoPage-d";
-import "./../CSS/InfoPanel.css";
-
+import InfoPanelA from "./InfoPanel-a";
+import InfoPanelB from "./InfoPanel-b";
+import "../CSS/Home.css";
 
 const spanStyle = {
   padding: "50px",
@@ -67,10 +67,16 @@ function InformationSection({ image, title, description, imageOnLeft }) {
       <CardContent>
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={6} order={imageOnLeft ? 1 : 2}>
-            <img src={image} alt={title} style={{ width: "100%" }} />
+            <img
+              src={image}
+              alt={title}
+              style={{ width: "100%", borderRadius: "10px" }}
+            />
           </Grid>
           <Grid item xs={12} md={6} order={imageOnLeft ? 2 : 1}>
-            <Typography variant="h5" sx={{ textAlign: "center", my: 1  }}>{title}</Typography>
+            <Typography variant="h5" sx={{ textAlign: "center", my: 1 }}>
+              {title}
+            </Typography>
             <Typography variant="body1" sx={{ textAlign: "justify" }}>
               {description}
             </Typography>
@@ -83,21 +89,36 @@ function InformationSection({ image, title, description, imageOnLeft }) {
 
 const Home = () => {
   return (
-    <Box sx={{
-        flexGrow: 1,
-        mt: 8
-      }}>
-      <Fade>
-        {slideImages.map((slideImage, index) => (
-          <div key={index}>
-            <div
-              style={{ ...divStyle, backgroundImage: `url(${slideImage.url})` }}
-            >
-              <p style={spanStyle}>{slideImage.caption}</p>
+    <Box
+      sx={{
+        backgroundColor: "#eee",
+      }}
+      className="main-content"
+    >
+      <Card
+        style={{
+          borderRadius: "10px",
+          border: "1px solid #e0e0e0",
+          boxShadow: "none",
+          maxWidth: "99.5%",
+          margin: "auto",
+        }}
+      >
+        <Fade>
+          {slideImages.map((slideImage, index) => (
+            <div key={index}>
+              <div
+                style={{
+                  ...divStyle,
+                  backgroundImage: `url(${slideImage.url})`,
+                }}
+              >
+                <p style={spanStyle}>{slideImage.caption}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </Fade>
+          ))}
+        </Fade>
+      </Card>
 
       <InformationSection
         image={hullcleaner}
@@ -138,18 +159,19 @@ const Home = () => {
         and operators."
         imageOnLeft={false}
       />
-      <div className="panel-b">
-          <InfoPanelB />
-        </div>
-        <div className="panel-d">
-          <InfoPanelD />
-        </div>
-        <div className="panel-a">
-          <InfoPanelA />
-        </div>
-        <div className="panel-c">
-          <AboutUS />
-        </div>
+
+      <div>
+        <InfoPanelB />
+      </div>
+      {/* <div className="panel-d">
+        <InfoPanelD />
+      </div> */}
+      {/* <div className="panel-a">
+        <InfoPanelA />
+      </div> */}
+      {/* <div className="panel-c">
+        <AboutUS />
+      </div> */}
     </Box>
   );
 };
