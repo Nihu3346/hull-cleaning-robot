@@ -28,52 +28,64 @@ const Footer = () => {
           paddingBottom: "1rem",
         }}
       >
-        <Container maxWidth="lg">
+        <Container maxWidth="xl">
           <Grid container direction="column" alignItems="center" spacing={1}>
             <Grid
               container
               alignItems="center"
               justifyContent="center"
-              item
-              xs={12}
-              sx={{ my: 2 }}
+              sx={{ py: 2 }}
             >
-              <AdbIcon sx={{ color: "black" }} />
-              <Typography
-                variant="h6"
-                noWrap
+              <Grid
+                item
+                xs={6}
                 sx={{
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "black",
-                  textDecoration: "none",
-                  ml: 1,
+                  textAlign: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
               >
-                LOGO
-              </Typography>
-            </Grid>
+                <AdbIcon sx={{ color: "black" }} />
+                <Typography
+                  variant="h6"
+                  noWrap
+                  sx={{
+                    fontFamily: "monospace",
+                    fontWeight: 700,
+                    letterSpacing: ".3rem",
+                    color: "black",
+                    textDecoration: "none",
+                    ml: 1,
+                  }}
+                >
+                  LOGO
+                </Typography>
+              </Grid>
 
-            <Grid item xs={12} sx={{ marginTop: 2 }}>
-              <Typography color="black" variant="subtitle1" style={{ fontWeight: 700 }}>
-                {`Connect`}
-              </Typography>
-            </Grid>
-
-            <Grid item xs={12}>
-              <IconButton sx={{ mr: 2 }}>
-                <FacebookIcon />
-              </IconButton>
-              <IconButton sx={{ mr: 2 }}>
-                <TwitterIcon />
-              </IconButton>
-              <IconButton sx={{ mr: 2 }}>
-                <InstagramIcon />
-              </IconButton>
-              <IconButton>
-                <LinkedInIcon />
-              </IconButton>
+              <Grid
+                item
+                xs={6}
+                sx={{
+                  textAlign: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <IconButton sx={{ mr: 2 }}>
+                  <FacebookIcon />
+                </IconButton>
+                <IconButton sx={{ mr: 2 }}>
+                  <TwitterIcon />
+                </IconButton>
+                <IconButton sx={{ mr: 2 }}>
+                  <InstagramIcon />
+                </IconButton>
+                <IconButton>
+                  <LinkedInIcon />
+                </IconButton>
+              </Grid>
             </Grid>
 
             <Grid container sx={{ marginTop: 4 }}>
