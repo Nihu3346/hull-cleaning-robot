@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AboutUS from "./Components/Pages/AboutUs";
 import Home from "./Components/Pages/Home";
 import PageNotFound from "./Components/Pages/PageNotFound";
+import HullClean from "./Components/Pages/HullClean";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/aboutus", element: <AboutUS /> },
+      { path: "/hullcleaning", element: <HullClean />}
     ],
   },
   { path: "*", element: <PageNotFound /> },

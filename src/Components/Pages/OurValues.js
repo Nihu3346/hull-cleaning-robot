@@ -9,7 +9,7 @@ const OurValues = () => {
     <>
       <div className="our-values-container">
         <div className="our-values-inner">
-          <div className="title">
+          <div className="our-values-title">
             <span>Our</span>
             <span> Values</span>
           </div>

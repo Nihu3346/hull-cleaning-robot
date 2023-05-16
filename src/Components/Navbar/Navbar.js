@@ -26,6 +26,7 @@ const drawerWidth = 240;
 const navItems = [
   { name: "Home", link: "/" },
   { name: "About Us", link: "/aboutus" },
+  { name: "Hull Cleaning", link: "/hullcleaning" },
 ];
 
 const DrawerAppBar = (props) => {
@@ -90,19 +91,19 @@ const DrawerAppBar = (props) => {
   return (
     <Box sx={{ display: "flex" }} className="responsive-appbar">
       <CssBaseline />
-      <AppBar component="nav" style={{ backgroundColor: "#ffffff" }}>
+      <AppBar component="nav" style={{ backgroundColor: "#242d33" }}>
         <Toolbar>
           <IconButton
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { sm: "none" }, color: "white" }}
           >
             <MenuIcon />
           </IconButton>
           <AdbIcon
             sx={{
-              display: { xs: "none", md: "flex", color: "black" },
+              display: { xs: "none", md: "flex", color: "white" },
               mr: 1,
               ml: 5,
             }}
@@ -115,7 +116,7 @@ const DrawerAppBar = (props) => {
               display: { xs: "none", sm: "block" },
               fontFamily: "monospace",
               fontWeight: 700,
-              color: "black",
+              color: "white",
             }}
           >
             LOGO
@@ -125,7 +126,7 @@ const DrawerAppBar = (props) => {
               <Button
                 key="Home"
                 sx={{
-                  color: "black",
+                  color: "white",
                   ":hover": {
                     color: "primary.main",
                   },
@@ -138,13 +139,26 @@ const DrawerAppBar = (props) => {
               <Button
                 key="aboutus"
                 sx={{
-                  color: "black",
+                  color: "white",
                   ":hover": {
                     color: "primary.main",
                   },
                 }}
               >
                 About Us
+              </Button>
+            </Link>
+            <Link to="/hullcleaning" style={{ textDecoration: "none" }}>
+              <Button
+                key="hullcleaning"
+                sx={{
+                  color: "white",
+                  ":hover": {
+                    color: "primary.main",
+                  },
+                }}
+              >
+                Hull Cleaning
               </Button>
             </Link>
           </Box>

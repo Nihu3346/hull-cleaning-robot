@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Card, Button, Modal } from "react-bootstrap";
-import sarthak from '../Images/sarthak.jpg';
-import mayank from '../Images/Mayank.jpg';
-import aylmer from '../Images/aylmerbritto.jpg';
-import adiraj from '../Images/adityraj.jpg';
-import sumukh from '../Images/sumukh.jpg';
-import shreya from '../Images/shreya.jpg';
-import prassanth from '../Images/prasshanth.jpg';
-import savan from '../Images/savan.jpg'
+import sarthak from "../Images/sarthak.jpg";
+import mayank from "../Images/Mayank.jpg";
+import aylmer from "../Images/aylmerbritto.jpg";
+import adiraj from "../Images/adityraj.jpg";
+import sumukh from "../Images/sumukh.jpg";
+import shreya from "../Images/shreya.jpg";
+import prassanth from "../Images/prasshanth.jpg";
+import savan from "../Images/savan.jpg";
 
 const teamMembers = [
   {
@@ -72,36 +72,36 @@ const TeamInfo = () => {
 
   return (
     <div className="team-container">
-         <div className="team-inner">
-      <div className="title">
-        <span>Our</span>
-        <span> Leadership</span>
-        <span> Team</span>
-      </div>
-      <div className="row">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="col-md-3">
-            <Card className="mb-4">
-              <Card.Img variant="top" src={member.imgSrc} />
-              <Card.Body>
-                <Card.Title>{member.name}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  {member.title}
-                </Card.Subtitle>
-                <Button variant="primary" onClick={() => handleShow(member)}>
-                  Read more
-                </Button>
-              </Card.Body>
-            </Card>
-          </div>
-        ))}
-      </div>
-      <Modal show={showBio} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedMember.name}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{selectedMember.bio}</Modal.Body>
-      </Modal>
+      <div className="team-inner">
+        <div className="our-values-title">
+          <span>Our</span>
+          <span> Leadership</span>
+          <span> Team</span>
+        </div>
+        <div className="row">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="col-md-3">
+              <Card className="mb-4">
+                <Card.Img variant="top" src={member.imgSrc} />
+                <Card.Body>
+                  <Card.Title>{member.name}</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">
+                    {member.title}
+                  </Card.Subtitle>
+                  <Button variant="primary" onClick={() => handleShow(member)}>
+                    Read more
+                  </Button>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
+        <Modal show={showBio} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>{selectedMember.name}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>{selectedMember.bio}</Modal.Body>
+        </Modal>
       </div>
     </div>
   );

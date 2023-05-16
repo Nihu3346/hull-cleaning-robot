@@ -14,6 +14,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import BusinessIcon from "@mui/icons-material/Business";
 import CallIcon from "@mui/icons-material/Call";
+import HullClean from "../Pages/HullClean";
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
         sx={{
           width: "100%",
           height: "auto",
-          backgroundColor: "white",
+          backgroundColor: "#242d33",
           paddingTop: "1rem",
           paddingBottom: "1rem",
         }}
@@ -46,7 +47,7 @@ const Footer = () => {
                   justifyContent: "center",
                 }}
               >
-                <AdbIcon sx={{ color: "black" }} />
+                <AdbIcon sx={{ color: "white" }} />
                 <Typography
                   variant="h6"
                   noWrap
@@ -54,7 +55,7 @@ const Footer = () => {
                     fontFamily: "monospace",
                     fontWeight: 700,
                     letterSpacing: ".3rem",
-                    color: "black",
+                    color: "white",
                     textDecoration: "none",
                     ml: 1,
                   }}
@@ -73,16 +74,16 @@ const Footer = () => {
                   justifyContent: "center",
                 }}
               >
-                <IconButton sx={{ mr: 2 }}>
+                <IconButton sx={{ mr: 2, color: "white" }}>
                   <FacebookIcon />
                 </IconButton>
-                <IconButton sx={{ mr: 2 }}>
+                <IconButton sx={{ mr: 2, color: "white" }}>
                   <TwitterIcon />
                 </IconButton>
-                <IconButton sx={{ mr: 2 }}>
+                <IconButton sx={{ mr: 2, color: "white" }}>
                   <InstagramIcon />
                 </IconButton>
-                <IconButton>
+                <IconButton sx={{ color: "white" }}>
                   <LinkedInIcon />
                 </IconButton>
               </Grid>
@@ -90,22 +91,29 @@ const Footer = () => {
 
             <Grid container sx={{ marginTop: 4 }}>
               <Grid item xs={12} md={4}>
-                <Typography variant="body1" align="center">
+                <Typography variant="body1" align="center" color="white">
                   <p style={{ fontWeight: 700 }}>Hull Cleaning</p>
-                  <p>Economic Advantage</p>
-                  <p>Environmental Advantage</p>
-                  <p>Quality Policy</p>
+                  <a href="/hullcleaning" style={{ textDecoration: "none", color: "white" }}>
+                    <p>Commercial Advantage</p>
+                  </a>
+                  <a href="/hullcleaning" style={{ textDecoration: "none", color: "white" }}>
+                    <p>Environmental Advantage</p>
+                  </a>
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
-                <Typography variant="body1" align="center">
+                <Typography variant="body1" align="center" color="white">
                   <p style={{ fontWeight: 700 }}>Quick Links</p>
-                  <p>About Us</p>
-                  <p>Out Team</p>
+                  <a href="/aboutus" style={{ textDecoration: "none", color: "white" }}>
+                    <p>About Us</p>
+                  </a>
+                  <a href="/aboutus" style={{ textDecoration: "none", color: "white" }}>
+                    <p>Our Team</p>
+                  </a>
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
-                <Typography variant="body1" align="center">
+                <Typography variant="body1" align="center" color="white">
                   <p style={{ fontWeight: 700 }}>Contact Info</p>
                   <p>
                     <IconButton style={{ pointerEvents: "none" }}>

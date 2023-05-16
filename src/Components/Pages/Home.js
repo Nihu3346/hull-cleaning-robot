@@ -51,7 +51,7 @@ const slideImages = [
   },
 ];
 
-function InformationSection({ image, title, description, imageOnLeft }) {
+const InformationSection = ({ image, title, description, imageOnLeft }) => {
   return (
     <Card
       style={{
@@ -93,7 +93,7 @@ const Home = () => {
       sx={{
         backgroundColor: "#eee",
       }}
-      className="main-content"
+      className="main-content-home"
     >
       <Card
         style={{
@@ -159,19 +159,16 @@ const Home = () => {
         and operators."
         imageOnLeft={false}
       />
-
+      
       <div>
-        <InfoPanelB />
-      </div>
-      {/* <div className="panel-d">
-        <InfoPanelD />
-      </div> */}
-      {/* <div className="panel-a">
-        <InfoPanelA />
-      </div> */}
-      {/* <div className="panel-c">
-        <AboutUS />
-      </div> */}
+          <InfoPanelB />
+        </div>
+        {/* <div className="panel-a">
+          <InfoPanelA />
+        </div>
+        <div className="panel-d">
+          <InfoPanelD />
+        </div> */}
     </Box>
   );
 };

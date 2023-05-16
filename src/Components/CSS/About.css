@@ -1,16 +1,16 @@
- .title span:last-child {
+ .our-values-title span:last-child {
   color: #20b5cd;
 }
- .title span {
+ .our-values-title span {
   font-family: Poppins;
   font-weight: 700;
   font-size: 62px;
   line-height: 95px;
 }
-.team-inner .title span:last-child {
+.team-inner .our-values-title span:last-child {
   color: #20b5cd;
 }
-.team-inner .title span {
+.team-inner .our-values-title span {
   color: #fff;
   font-family: Poppins;
   font-weight: 700;
@@ -30,7 +30,7 @@
 .our-values-inner {
   min-height: auto;
   padding: 60px 150px 0;
-  margin: 0 auto;
+  margin: 30px auto;
   position: relative;
 }
 .team-inner {
@@ -53,10 +53,12 @@
     position: relative;
     padding-bottom: 15px;
     margin-bottom: 15px;
+    font-family: Poppins;
 }
 .card-content{
   font-size: 22px;
   line-height: 35px;
+  font-family: Poppins;
   color: #999;
 }
     
