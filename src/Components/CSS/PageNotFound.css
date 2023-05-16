@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+
+body {
+  background-color: black;
+}
+
+.not-found-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.not-found-message {
+  font-family: "Roboto Mono", monospace;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+}
