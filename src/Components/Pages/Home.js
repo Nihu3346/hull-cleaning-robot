@@ -9,9 +9,6 @@ import ship3 from "../Images/ship3.png";
 import ship5 from "../Images/ship5.jpg";
 import ship6 from "../Images/ship6.jpg";
 import "./../CSS/InfoPanel.css";
-import AboutUS from "./AboutUs";
-import InfoPanelD from "./InfoPage-d";
-import InfoPanelA from "./InfoPanel-a";
 import InfoPanelB from "./InfoPanel-b";
 import "../CSS/Home.css";
 
@@ -85,7 +82,7 @@ const InformationSection = ({ image, title, description, imageOnLeft }) => {
       </CardContent>
     </Card>
   );
-}
+};
 
 const Home = () => {
   return (
@@ -159,16 +156,10 @@ const Home = () => {
         and operators."
         imageOnLeft={false}
       />
-      
+
       <div>
-          <InfoPanelB />
-        </div>
-        {/* <div className="panel-a">
-          <InfoPanelA />
-        </div>
-        <div className="panel-d">
-          <InfoPanelD />
-        </div> */}
+        <InfoPanelB />
+      </div>
     </Box>
   );
 };

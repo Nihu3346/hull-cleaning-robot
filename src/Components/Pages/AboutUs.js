@@ -7,10 +7,15 @@ import InfoPanelA from "./InfoPanel-a";
 const AboutUS = () => {
   return (
     <>
-    <TeamInfo />
-    <InfoPanelA />
-      <OurValues />
-      
+      <div>
+        <TeamInfo />
+      </div>
+      <div>
+        <InfoPanelA />
+      </div>
+      <div>
+        <OurValues />
+      </div>
     </>
   );
 };
