@@ -1,54 +1,76 @@
-import { useEffect, useRef, useState } from "react";
-import "./Slideshowtext.css";
-import { Box } from "@mui/material";
+import { Card } from "@mui/material";
+import { Fade } from "react-slideshow-image";
+import ship3 from "../Images/ship3.png";
+import ship5 from "../Images/ship5.jpg";
+import ship6 from "../Images/ship6.jpg";
 
-const colors = ["yash", "#00C49F", "#FFBB28"];
-const delay = 3500;
+const Slideshowtext = () => {
+  const spanStyle = {
+    padding: "50px",
+    color: "#efefef",
+    fontWeight: "500",
+    fontSize: "35px",
+    textAlign: "center",
+    backdropFilter: "none",
+    fontFamily: "PT Sans, sans-serif",
+  };
 
-function Slideshowtext() {
-  const [index, setIndex] = useState(0);
-  const timeoutRef = useRef(null);
+  const divStyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundSize: "cover",
+    height: "400px",
+    backdropFilter: "blur(8px)",
+  };
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
-
-  useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
-
-    return () => {
-      resetTimeout();
-    };
-  }, [index]);
+  const slideImages = [
+    {
+      url: ship3,
+      caption:
+        "Revolutionize underwater maintenance with our innovative hull cleaning robots.",
+    },
+    {
+      url: ship6,
+      caption:
+        "Boost your vessel's performance and save on fuel costs with our advanced hull cleaning robots.",
+    },
+    {
+      url: ship5,
+      caption:
+        "Say goodbye to slow, hazardous and outdated hull cleaning methods, and hello to the future of underwater maintenance.",
+    },
+  ];
 
   return (
     <>
-      <Box sx={{mt: 10}}>
-        <p class="item-1">
-          This is your last chance. After this, there is no turning back.
-        </p>
-
-        <p class="item-2">
-          You take the blue pill - the story ends, you wake up in your bed and
-          believe whatever you want to believe.
-        </p>
-
-        <p class="item-3">
-          You take the red pill - you stay in Wonderland and I show you how deep
-          the rabbit-hole goes.
-        </p>
-      </Box>
+      <Card
+        style={{
+          borderRadius: "10px",
+          boxShadow: "none",
+          maxWidth: "99.5%",
+          margin: "auto",
+        }}
+      >
+        <Fade>
+          {slideImages.map((slideImage, index) => (
+            <div key={index}>
+              <div
+                style={{
+                  ...divStyle,
+                  backgroundImage: `url(${slideImage.url})`,
+                }}
+              >
+                <div>
+                  <p style={spanStyle}>{slideImage.caption}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Fade>
+      </Card>
     </>
   );
-}
+};
 
 export default Slideshowtext;

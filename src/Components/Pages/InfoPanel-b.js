@@ -1,70 +1,165 @@
 import drone from "./../Images/drone.png";
-import {
-  Card,
-  CardContent,
-  CardActionArea,
-  CardMedia,
-  Typography,
-  Grid,
-} from "@mui/material";
+import { Card, CardContent, Typography, Grid } from "@mui/material";
+import React, { useEffect, useRef, useState } from "react";
 
 const InfoPanelB = () => {
+  const [isCardVisible, setIsCardVisible] = useState(false);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsCardVisible(true);
+        } else {
+          setIsCardVisible(false);
+        }
+      });
+    }, options);
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
-      <Typography
-        align="center"
-        sx={{
-          fontSize: 34,
-          fontWeight: 600,
-          backgroundImage: "linear-gradient(to right, #D4A6B0, #4682B4)",
-          color: "transparent",
-          WebkitBackgroundClip: "text",
-          backgroundClip: "text",
-          mb: 2,
-        }}
-      >
-        Underwater Hull Cleaning Solutions
-      </Typography>
-      <Card
-        style={{
-          borderRadius: "10px",
-          border: "2px solid #e0e0e0",
-          boxShadow: "none",
-          maxWidth: "90%",
-          margin: "auto",
-          background: "linear-gradient(to right, #D4A6B0, #4682B4)",
-          color: "#fff",
-          fontFamily: "Roboto",
-        }}
-      >
-        <CardContent>
-          <Grid container spacing={2} alignItems="center">
-            <Grid item xs={12} md={6} order={2}>
-              <img
-                src={drone}
-                alt="Hull-Cleaner"
-                style={{ width: "100%", borderRadius: "10px" }}
-              />
+      <div>
+        <Typography
+          align="center"
+          ref={cardRef}
+          sx={{
+            fontSize: 40,
+            fontWeight: "bold",
+            fontFamily: "PT Sans, sans-serif",
+            backgroundImage: "linear-gradient(black, grey)",
+            color: "transparent",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            mb: 2,
+            opacity: isCardVisible ? 1 : 0,
+            transform: isCardVisible ? "translateY(0)" : "translateY(20px)",
+            transition: "opacity 0.5s ease, transform 0.5s ease",
+          }}
+        >
+          Underwater Hull Cleaning Solutions
+        </Typography>
+        <Card
+          ref={cardRef}
+          style={{
+            borderRadius: "10px",
+            boxShadow: "none",
+            maxWidth: "90%",
+            margin: "auto",
+            marginTop: "45px",
+            marginBottom: "45px",
+            background: "black",
+            color: "#fff",
+            opacity: isCardVisible ? 1 : 0,
+            transform: isCardVisible ? "translateY(0)" : "translateY(20px)",
+            transition: "opacity 0.5s ease, transform 0.5s ease",
+          }}
+        >
+          <CardContent>
+            <Grid container spacing={2} sx={{ p: 4 }}>
+              <Grid item xs={12} md={6} order={1}>
+                <img
+                  src={drone}
+                  alt="Hull-Cleaner"
+                  style={{ width: "100%", borderRadius: "10px" }}
+                />
+              </Grid>
+              <Grid item xs={12} md={6} order={2}>
+                <Typography
+                  variant="h3"
+                  sx={{
+                    textAlign: "left",
+                    mb: 2,
+                    color: "white",
+                    fontWeight: "medium",
+                    fontFamily: "PT Sans, sans-serif",
+                  }}
+                >
+                  <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
+                    W
+                  </span>
+                  hy choose robot?
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    textAlign: "justify",
+                    color: "white",
+                    fontFamily: "PT Sans, sans-serif",
+                    fontSize: "1.4rem",
+                    mb: 1,
+                  }}
+                >
+                  <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
+                    Replace
+                  </span>{" "}
+                  labor-intensive manual hull cleaning technique with automated
+                  robotic systems.
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    textAlign: "justify",
+                    color: "white",
+                    fontFamily: "PT Sans, sans-serif",
+                    fontSize: "1.4rem",
+                    mb: 1,
+                  }}
+                >
+                  <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
+                    Efficiently
+                  </span>{" "}
+                  removes biofouling and debris from ship surfaces.
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    textAlign: "justify",
+                    color: "white",
+                    fontFamily: "PT Sans, sans-serif",
+                    fontSize: "1.4rem",
+                    mb: 1,
+                  }}
+                >
+                  Aiming to enhance
+                  <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
+                    {" "}
+                    Productivity
+                  </span>
+                  , reduce
+                  <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
+                    {" "}
+                    Cost
+                  </span>
+                  , and improve
+                  <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
+                    {" "}
+                    Safety
+                  </span>
+                  .
+                </Typography>
+              </Grid>
             </Grid>
-            <Grid item xs={12} md={6} order={2}>
-              <Typography variant="h5" sx={{ textAlign: "center", my: 1 }}>
-                Why choose hull cleaner robot?
-              </Typography>
-              <Typography variant="body1" sx={{ textAlign: "justify" }}>
-                Bio-fouling is a persistent problem that plagues the maritime
-                industry, causing colonies of algae, barnacles, and tapeworm to
-                attach to the hull of ships. This accumulation increases drag
-                force on the vessel, leading to a reduction in fuel efficiency
-                by as much as 20%. For container carriers and cargo ships, this
-                can result in massive financial losses per trip, amounting to
-                millions of dollars. As a result, regular and efficient hull
-                cleaning is essential for maintaining optimal performance and
-                profitability in the industry.
-              </Typography>
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </div>
     </>
   );
 };
