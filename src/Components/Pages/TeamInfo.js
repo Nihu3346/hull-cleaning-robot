@@ -8,6 +8,8 @@ import sumukh from "../Images/sumukh.jpg";
 import shreya from "../Images/shreya.jpg";
 import prassanth from "../Images/prasshanth.jpg";
 import savan from "../Images/savan.jpg";
+import { Link } from "react-router-dom";
+
 
 const teamMembers = [
   {

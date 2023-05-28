@@ -27,7 +27,6 @@ const drawerWidth = 240;
 const navItems = [
   { name: "Home", link: "/" },
   { name: "About Us", link: "/aboutus" },
-  { name: "Hull Cleaning", link: "/hullcleaning" },
 ];
 
 const DrawerAppBar = (props) => {
@@ -177,7 +176,7 @@ const DrawerAppBar = (props) => {
                   About Us
                 </Button>
               </Link>
-              <Link to="/hullcleaning" style={{ textDecoration: "none" }}>
+              {/* <Link to="/hullcleaning" style={{ textDecoration: "none" }}>
                 <Button
                   key="hullcleaning"
                   sx={{
@@ -190,7 +189,7 @@ const DrawerAppBar = (props) => {
                 >
                   Hull Cleaning
                 </Button>
-              </Link>
+              </Link> */}
             </Box>
           </Toolbar>
         </AppBar>
