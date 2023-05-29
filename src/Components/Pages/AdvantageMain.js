@@ -39,7 +39,8 @@ const AdvantageMain = () => {
                   width: "100%",
                 }}
               >
-                <h5 className="card-title" style={{ color: "white" }}>
+                <h5 className="card-title" style={{ color: "white",fontWeight: "400",
+                  fontFamily: "PT Sans, sans-serif" }}>
                   How Our Robots Save You Time and Money Compared to Manual
                   Diving Teams
                 </h5>
@@ -49,6 +50,7 @@ const AdvantageMain = () => {
                     color: "none",
                     textTransform: "capitalize",
                     textDecoration: "none",
+                    fontFamily: "PT Sans, sans-serif"
                   }}
                 >
                   READ MORE&nbsp;&#9656;
@@ -78,7 +80,8 @@ const AdvantageMain = () => {
                   width: "100%",
                 }}
               >
-                <h5 className="card-title" style={{ color: "white" }}>
+                <h5 className="card-title" style={{ color: "white",fontWeight: "400",
+                  fontFamily: "PT Sans, sans-serif" }}>
                   Eco-Friendly Cleaning with Responsible Waste Disposal
                 </h5>
                 <Link
@@ -87,6 +90,7 @@ const AdvantageMain = () => {
                     color: "none",
                     textTransform: "capitalize",
                     textDecoration: "none",
+                  fontFamily: "PT Sans, sans-serif"
                   }}
                 >
                   READ MORE&nbsp;&#9656;
@@ -116,7 +120,8 @@ const AdvantageMain = () => {
                   width: "100%",
                 }}
               >
-                <h5 className="card-title" style={{ color: "white" }}>
+                <h5 className="card-title" style={{ color: "white",fontWeight: "400",
+                  fontFamily: "PT Sans, sans-serif" }}>
                   Protecting Ships from Invasive Marine Species with Cavitation
                   Jet-Based Technology
                 </h5>
@@ -126,6 +131,7 @@ const AdvantageMain = () => {
                     color: "none",
                     textTransform: "capitalize",
                     textDecoration: "none",
+                  fontFamily: "PT Sans, sans-serif"
                   }}
                 >
                   READ MORE&nbsp;&#9656;

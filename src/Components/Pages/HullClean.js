@@ -26,11 +26,11 @@ const HullClean = () => {
         </div>
         <Box
           sx={{
-            backgroundColor: "#eee",
+            backgroundColor: "black",
           }}
           className="main-content-home"
         >
-          <div>
+          <div className="advan">
             <Advantage1 />
           </div>
           <div>

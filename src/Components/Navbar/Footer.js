@@ -18,7 +18,7 @@ import CallIcon from "@mui/icons-material/Call";
 const Footer = () => {
   return (
     <>
-      <Divider sx={{ backgroundColor: "black" }} />
+      {/* <Divider sx={{ backgroundColor: "black" }} /> */}
       <Box
         sx={{
           width: "100%",
