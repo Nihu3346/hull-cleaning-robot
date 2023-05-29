@@ -5,6 +5,7 @@
   top: 0;
   padding-top: 70px;
   padding-bottom: 20px;
+
 }
 
 .bg-text {
@@ -30,6 +31,15 @@ body {
 }
 .card {
   transition: transform 0.5s;
+}
+
+.black-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20%; /* Adjust the percentage as needed */
+  background-color: black;
 }
 
 /* .fancy-button {
