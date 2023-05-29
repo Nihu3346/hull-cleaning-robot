@@ -79,3 +79,14 @@ body {
 .fancy-button:hover .button-bar {
   transform: scaleX(1);
 } */
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.2);
+}
