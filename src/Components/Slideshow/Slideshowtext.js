@@ -46,9 +46,9 @@ const Slideshowtext = () => {
     <>
       <Card
         style={{
-          borderRadius: "10px",
           boxShadow: "none",
-          maxWidth: "99.5%",
+          borderRadius: 0,
+          maxWidth: "100%",
           margin: "auto",
         }}
       >

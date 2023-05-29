@@ -37,35 +37,16 @@ const InfoPanelB = () => {
   return (
     <>
       <div>
-        <Typography
-          align="center"
-          ref={cardRef}
-          sx={{
-            fontSize: 40,
-            fontWeight: "bold",
-            fontFamily: "PT Sans, sans-serif",
-            backgroundImage: "linear-gradient(black, grey)",
-            color: "transparent",
-            WebkitBackgroundClip: "text",
-            backgroundClip: "text",
-            mb: 2,
-            opacity: isCardVisible ? 1 : 0,
-            transform: isCardVisible ? "translateY(0)" : "translateY(20px)",
-            transition: "opacity 0.5s ease, transform 0.5s ease",
-          }}
-        >
-          Underwater Hull Cleaning Solutions
-        </Typography>
         <Card
           ref={cardRef}
           style={{
-            borderRadius: "10px",
             boxShadow: "none",
-            maxWidth: "90%",
+            maxWidth: "100%",
             margin: "auto",
             marginTop: "45px",
             marginBottom: "45px",
             background: "black",
+            borderRadius: 0,
             color: "#fff",
             opacity: isCardVisible ? 1 : 0,
             transform: isCardVisible ? "translateY(0)" : "translateY(20px)",
@@ -74,14 +55,14 @@ const InfoPanelB = () => {
         >
           <CardContent>
             <Grid container spacing={2} sx={{ p: 4 }}>
-              <Grid item xs={12} md={6} order={1}>
+              <Grid item xs={12} md={5} order={1}>
                 <img
                   src={drone}
                   alt="Hull-Cleaner"
                   style={{ width: "100%", borderRadius: "10px" }}
                 />
               </Grid>
-              <Grid item xs={12} md={6} order={2}>
+              <Grid item xs={12} md={7} order={2}>
                 <Typography
                   variant="h3"
                   sx={{

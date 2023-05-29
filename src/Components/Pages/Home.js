@@ -70,17 +70,19 @@ const Home = () => {
       }}
       className="main-content-home"
     >
+      <div className="black-background"></div>
       <Slideshowtext />
       <Card
         ref={card1Ref}
         style={{
-          borderRadius: "10px",
           boxShadow: "none",
-          maxWidth: "90%",
+          maxWidth: "100%",
+          height: "100%",
           margin: "auto",
-          marginTop: "45px",
+          marginTop: "7px",
           marginBottom: "45px",
           backgroundColor: "#000",
+          borderRadius: 0,
           opacity: isCard1Visible ? 1 : 0,
           transform: isCard1Visible ? "translateY(0)" : "translateY(20px)",
           transition: "opacity 0.5s ease, transform 0.5s ease",
@@ -171,14 +173,11 @@ const Home = () => {
       <Card
         ref={card2Ref}
         style={{
-          borderRadius: "10px",
           boxShadow: "none",
-          maxWidth: "90%",
+          maxWidth: "100%",
           margin: "auto",
-          marginTop: "45px",
-          marginBottom: "45px",
-          background: "black",
-          color: "#fff",
+          background: "white",
+          borderRadius: 0,
           opacity: isCard2Visible ? 1 : 0,
           transform: isCard2Visible ? "translateY(0)" : "translateY(20px)",
           transition: "opacity 0.5s ease, transform 0.5s ease",
@@ -186,20 +185,20 @@ const Home = () => {
       >
         <CardContent>
           <Grid container spacing={2} sx={{ p: 4 }}>
-            <Grid item xs={12} md={6} order={2}>
+            <Grid item xs={12} md={5} order={2}>
               <img
                 src={roboBG}
                 alt={"Economic Benefits"}
                 style={{ width: "100%", borderRadius: "10px" }}
               />
             </Grid>
-            <Grid item xs={12} md={6} order={1}>
+            <Grid item xs={12} md={7} order={1}>
               <Typography
                 variant="h3"
                 sx={{
                   textAlign: "left",
                   mb: 2,
-                  color: "white",
+                  color: "black",
                   fontWeight: "medium",
                   fontFamily: "PT Sans, sans-serif",
                 }}
@@ -212,7 +211,7 @@ const Home = () => {
                 variant="body1"
                 sx={{
                   textAlign: "justify",
-                  color: "#fff",
+                  color: "black",
                   fontFamily: "PT Sans, sans-serif",
                   fontSize: "1.4rem",
                   mb: 1,
@@ -229,7 +228,7 @@ const Home = () => {
                 variant="body1"
                 sx={{
                   textAlign: "justify",
-                  color: "#fff",
+                  color: "black",
                   fontFamily: "PT Sans, sans-serif",
                   fontSize: "1.4rem",
                   mb: 1,
@@ -248,7 +247,7 @@ const Home = () => {
                 variant="body1"
                 sx={{
                   textAlign: "justify",
-                  color: "#fff",
+                  color: "black",
                   fontFamily: "PT Sans, sans-serif",
                   fontSize: "1.4rem",
                   mb: 1,
