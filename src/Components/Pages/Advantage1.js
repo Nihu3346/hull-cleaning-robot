@@ -1,13 +1,7 @@
 import drone from "./../Images/hull_1.png";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Grid,
-} from "@mui/material";
+import { Card, CardContent, Typography, Grid } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import roboBG from "../Images/time.jpg";
-
 
 const Advantage1 = () => {
   const [isCard1Visible, setIsCard1Visible] = useState(false);
@@ -122,7 +116,7 @@ const Advantage1 = () => {
           background: "white",
           borderRadius: 0,
           opacity: isCard2Visible ? 1 : 0,
-          transform: isCard2Visible ? "translateY(0)" : "translateY(20px)",
+          transform: isCard2Visible ? "translateY(0)" : "translateY(10px)",
           transition: "opacity 0.5s ease, transform 0.5s ease",
         }}
       >

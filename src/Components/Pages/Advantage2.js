@@ -50,11 +50,7 @@ const Advantage2 = () => {
             boxShadow: "none",
             maxWidth: "100%",
             margin: "auto",
-            marginTop: "45px",
-            marginBottom: "45px",
             background: "black",
-            borderRadius: 0,
-            color: "#fff",
             opacity: isCardVisible ? 1 : 0,
             transform: isCardVisible ? "translateY(0)" : "translateY(20px)",
             transition: "opacity 0.5s ease, transform 0.5s ease",
@@ -66,7 +62,7 @@ const Advantage2 = () => {
                 <img
                   src={drone}
                   alt="Hull-Cleaner"
-                  style={{ width: "100%", borderRadius: "50% 50% 50% 50%", justifyContent: "center" }}
+                  style={{ width: "100%", borderRadius: "50% 50% 50% 50%"}}
                 />
               </Grid>
               <Grid item xs={12} md={7} order={2}>

@@ -8,6 +8,7 @@ import AboutUS from "./Components/Pages/AboutUs";
 import Home from "./Components/Pages/Home";
 import PageNotFound from "./Components/Pages/PageNotFound";
 import HullClean from "./Components/Pages/HullClean";
+import ContactUs from "./Components/Pages/ContactUsPage";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/aboutus", element: <AboutUS /> },
-      { path: "/hullcleaning", element: <HullClean />}
+      { path: "/hullcleaning", element: <HullClean />},
+      {path: "/contactus", element: <ContactUs />}
     ],
   },
   { path: "*", element: <PageNotFound /> },

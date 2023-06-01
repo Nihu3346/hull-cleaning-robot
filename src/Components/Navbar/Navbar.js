@@ -27,6 +27,7 @@ const drawerWidth = 240;
 const navItems = [
   { name: "Home", link: "/" },
   { name: "About Us", link: "/aboutus" },
+  { name: "Contact Us", link: "/contactus" },
 ];
 
 const DrawerAppBar = (props) => {
@@ -90,14 +91,13 @@ const DrawerAppBar = (props) => {
   const trigger = useScrollTrigger();
 
   const appBarStyle = {
-    borderRadius: trigger ? '20px' : '0',
-    boxShadow: trigger ? '0px 2px 4px rgba(0, 0, 0, 0.1)' : 'none',
-    marginLeft: trigger ? '4px' : '0',
-    marginRight: trigger ? '4px' : '0',
-    width: trigger ? 'calc(100% - 8px)' : '100%',
-    transition: 'padding-left 0.3s ease, padding-right 0.3s ease',
+    borderRadius: trigger ? "20px" : "0",
+    boxShadow: trigger ? "0px 2px 4px rgba(0, 0, 0, 0.1)" : "none",
+    marginLeft: trigger ? "4px" : "0",
+    marginRight: trigger ? "4px" : "0",
+    width: trigger ? "calc(100% - 8px)" : "100%",
+    transition: "padding-left 0.3s ease, padding-right 0.3s ease",
   };
-
 
   const ElevationScroll = ({ children }) => {
     const trigger = useScrollTrigger({
@@ -176,9 +176,9 @@ const DrawerAppBar = (props) => {
                   About Us
                 </Button>
               </Link>
-              {/* <Link to="/hullcleaning" style={{ textDecoration: "none" }}>
+              <Link to="/contactus" style={{ textDecoration: "none" }}>
                 <Button
-                  key="hullcleaning"
+                  key="ContactUs"
                   sx={{
                     color: "white",
                     fontFamily: "PT Sans, sans-serif",
@@ -187,9 +187,9 @@ const DrawerAppBar = (props) => {
                     },
                   }}
                 >
-                  Hull Cleaning
+                  Contact Us
                 </Button>
-              </Link> */}
+              </Link>
             </Box>
           </Toolbar>
         </AppBar>
