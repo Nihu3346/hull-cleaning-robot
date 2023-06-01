@@ -13,6 +13,8 @@ const InfoPanelB = () => {
       threshold: 0.5,
     };
 
+    const currentCardRef = cardRef.current;
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -23,13 +25,13 @@ const InfoPanelB = () => {
       });
     }, options);
 
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
+    if (currentCardRef) {
+      observer.observe(currentCardRef);
     }
 
     return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
+      if (currentCardRef) {
+        observer.unobserve(currentCardRef);
       }
     };
   }, []);
@@ -56,11 +58,13 @@ const InfoPanelB = () => {
           <CardContent>
             <Grid container spacing={2} sx={{ p: 4 }}>
               <Grid item xs={12} md={5} order={1}>
-                <img
-                  src={drone}
-                  alt="Hull-Cleaner"
-                  style={{ width: "100%", borderRadius: "10px" }}
-                />
+                <div className="image-container">
+                  <img
+                    src={drone}
+                    alt="Hull-Cleaner"
+                    style={{ width: "100%", borderRadius: "10px" }}
+                  />
+                </div>
               </Grid>
               <Grid item xs={12} md={7} order={2}>
                 <Typography

@@ -16,6 +16,7 @@ const HullClean = () => {
         <div className="image-with-text-container">
           <img
             src={hulcl}
+            alt="Hull Cleaner"
             style={{ width: "100%", height: "600px" }}
             fluid
             className="image"
@@ -24,13 +25,8 @@ const HullClean = () => {
             <h1 className="heading">Commercial & Environmental Advantages</h1>
           </div>
         </div>
-        <Box
-          sx={{
-            backgroundColor: "black",
-          }}
-          className="main-content-home"
-        >
-          <div className="advan">
+        <Box>
+          <div>
             <Advantage1 />
           </div>
           <div>
