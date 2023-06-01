@@ -6,13 +6,16 @@ const Advantage3 = () => {
   const [isCard2Visible, setIsCard2Visible] = useState(false);
   const card2Ref = useRef(null);
 
+  
   useEffect(() => {
     const options = {
       root: null,
       rootMargin: "0px",
       threshold: 0.5,
     };
-
+    
+    const currentCard2Ref = card2Ref.current;
+    
     const observer2 = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -23,13 +26,13 @@ const Advantage3 = () => {
       });
     }, options);
 
-    if (card2Ref.current) {
-      observer2.observe(card2Ref.current);
+    if (currentCard2Ref) {
+      observer2.observe(currentCard2Ref);
     }
 
     return () => {
-      if (card2Ref.current) {
-        observer2.unobserve(card2Ref.current);
+      if (currentCard2Ref) {
+        observer2.unobserve(currentCard2Ref);
       }
     };
   }, []);
