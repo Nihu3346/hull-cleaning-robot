@@ -14,6 +14,7 @@ import Advantage3 from "./Advantage3";
 import AdvantageMain from "./AdvantageMain";
 import AboutUS from "./AboutUs";
 import Waves from "../Slideshow/WavesBottom";
+import SlideShowImage from "../Slideshow/SlideshowImage";
 const Home = () => {
   const [isCard1Visible, setIsCard1Visible] = useState(false);
   const [isCard2Visible, setIsCard2Visible] = useState(false);

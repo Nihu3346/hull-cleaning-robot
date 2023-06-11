@@ -3,6 +3,7 @@ import { Box, CardContent, Grid, Typography } from "@mui/material";
 import "./Slideshowtext-bottom.css";
 import { useEffect, useRef, useState } from "react";
 import WavesBottom from "./WavesBottom";
+import SlideShowImage from "./SlideshowImage";
 
 const Slideshowtext = () => {
   const [isCardVisible, setIsCardVisible] = useState(false);
@@ -42,10 +43,7 @@ const Slideshowtext = () => {
     <>
       <div className="header">
         <div className="inner-header flex">
-          <h1>
-            Say goodbye to slow, hazardous and outdated hull cleaning methods,
-            and hello to the future of underwater maintenance.
-          </h1>
+          <SlideShowImage />
         </div>
 
         <Card

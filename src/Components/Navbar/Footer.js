@@ -142,11 +142,11 @@ const Footer = () => {
                   </p>
                   <a
                     href="/hullcleaning"
-                    style={{ textDecoration: "none", color: "white" }}
+                    style={{ textDecoration: "none"}}
                     onMouseEnter={(e) => (e.target.style.color = "#aacefa")}
                     onMouseLeave={(e) => (e.target.style.color = "white")}
                   >
-                    <p>Commercial Advantage</p>
+                    <p style={{ color: "white" }}>Commercial Advantage</p>
                   </a>
                   <a
                     href="/hullcleaning"
@@ -154,7 +154,7 @@ const Footer = () => {
                     onMouseEnter={(e) => (e.target.style.color = "#aacefa")}
                     onMouseLeave={(e) => (e.target.style.color = "white")}
                   >
-                    <p>Environmental Advantage</p>
+                    <p style={{ color: "white" }}>Environmental Advantage</p>
                   </a>
                 </Typography>
               </Grid>
@@ -174,7 +174,7 @@ const Footer = () => {
                     onMouseEnter={(e) => (e.target.style.color = "#aacefa")}
                     onMouseLeave={(e) => (e.target.style.color = "white")}
                   >
-                    <p>About Us</p>
+                    <p style={{ color: "white" }}>About Us</p>
                   </a>
                   <a
                     href="/aboutus"
@@ -182,7 +182,7 @@ const Footer = () => {
                     onMouseEnter={(e) => (e.target.style.color = "#aacefa")}
                     onMouseLeave={(e) => (e.target.style.color = "white")}
                   >
-                    <p>Our Team</p>
+                    <p style={{ color: "white" }}>Our Team</p>
                   </a>
                 </Typography>
               </Grid>
@@ -199,6 +199,7 @@ const Footer = () => {
                     Contact Info
                   </p>
                   <p
+                    style={{ color: "white" }}
                     onMouseEnter={(e) => (e.target.style.color = "#aacefa")}
                     onMouseLeave={(e) => (e.target.style.color = "white")}
                   >
@@ -210,6 +211,7 @@ const Footer = () => {
                     Hyderabad, Jubilee Hills
                   </p>
                   <p
+                    style={{ color: "white" }}
                     onMouseEnter={(e) => (e.target.style.color = "#aacefa")}
                     onMouseLeave={(e) => (e.target.style.color = "white")}
                   >
