@@ -13,6 +13,7 @@ import hulcl from "./../Images/shutterstock_175341791.jpg";
 import Advantage3 from "./Advantage3";
 import AdvantageMain from "./AdvantageMain";
 import AboutUS from "./AboutUs";
+import Waves from "../Slideshow/WavesBottom";
 const Home = () => {
   const [isCard1Visible, setIsCard1Visible] = useState(false);
   const [isCard2Visible, setIsCard2Visible] = useState(false);
@@ -70,9 +71,8 @@ const Home = () => {
       }}
       className="main-content-home"
     >
-      <div className="black-background"></div>
       <Slideshowtext />
-      <Card
+      {/* <Card
         ref={card1Ref}
         style={{
           boxShadow: "none",
@@ -168,7 +168,7 @@ const Home = () => {
             </Grid>
           </Grid>
         </CardContent>
-      </Card>
+      </Card> */}
 
       <Card
         ref={card2Ref}

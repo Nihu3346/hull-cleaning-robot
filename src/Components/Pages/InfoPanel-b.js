@@ -1,6 +1,9 @@
 import drone from "./../Images/drone.png";
 import { Card, CardContent, Typography, Grid } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
+import "../Slideshow/Slideshowtext.css";
+import WavesTop from "../Slideshow/WavesTop";
+import WavesBottom from "../Slideshow/WavesBottom";
 
 const InfoPanelB = () => {
   const [isCardVisible, setIsCardVisible] = useState(false);
@@ -38,7 +41,8 @@ const InfoPanelB = () => {
 
   return (
     <>
-      <div>
+      <div className="header">
+        <WavesTop />
         <Card
           ref={cardRef}
           style={{
@@ -47,9 +51,8 @@ const InfoPanelB = () => {
             margin: "auto",
             marginTop: "45px",
             marginBottom: "45px",
-            background: "black",
             borderRadius: 0,
-            color: "#fff",
+            background: "transparent",
             opacity: isCardVisible ? 1 : 0,
             transform: isCardVisible ? "translateY(0)" : "translateY(20px)",
             transition: "opacity 0.5s ease, transform 0.5s ease",
@@ -144,6 +147,7 @@ const InfoPanelB = () => {
             </Grid>
           </CardContent>
         </Card>
+        <WavesBottom />
       </div>
     </>
   );

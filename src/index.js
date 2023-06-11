@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import App from "./App";
 import AboutUS from "./Components/Pages/AboutUs";
 import Home from "./Components/Pages/Home";
-import PageNotFound from "./Components/Pages/PageNotFound";
 import HullClean from "./Components/Pages/HullClean";
+import PageNotFound from "./Components/Pages/PageNotFound";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 import ContactUs from "./Components/Pages/ContactUsPage";
 
 const router = createBrowserRouter([
