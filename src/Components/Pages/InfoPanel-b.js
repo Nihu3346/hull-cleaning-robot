@@ -1,7 +1,7 @@
 import drone from "./../Images/drone.png";
 import { Card, CardContent, Typography, Grid } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
-import "../Slideshow/Slideshowtext.css";
+import "../Slideshow/Slideshowtext-bottom.css";
 import WavesTop from "../Slideshow/WavesTop";
 import WavesBottom from "../Slideshow/WavesBottom";
 
