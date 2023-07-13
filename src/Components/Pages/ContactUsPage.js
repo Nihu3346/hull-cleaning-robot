@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./../CSS/ContactUsPage.css";
+import "../CSS/font-gillory.css";
 
 const ContactUs = () => {
   return (
@@ -9,10 +10,10 @@ const ContactUs = () => {
         <Row>
           <Col md={6}>
             <div className="contact-form">
-              <div className="contact-us-header">
+              <div className="contact-us-header" style={{fontFamily: "Gilroy-Regular"}}>
                 <h2>Let's talk about everything!</h2>
               </div>
-              <Form>
+              <Form style={{fontFamily: "Gilroy-Regular"}}>
                 <Form.Group controlId="formName">
                   <Form.Control type="text" placeholder="Enter your name" />
                 </Form.Group>

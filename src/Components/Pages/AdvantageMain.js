@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import robo from "./../Images/robo.jpg"
 import environment from "./../Images/environment.jpg";
 import robo2 from "./../Images/robo2.jpg"
+import "../CSS/font-gillory.css"
+
 const AdvantageMain = () => {
   return (
     <>
@@ -10,7 +12,7 @@ const AdvantageMain = () => {
           className="text-center mb-4"
           style={{
             fontWeight: "bold",
-            fontFamily: "PT Sans, sans-serif",
+            fontFamily: "Gilroy-Regular",
             fontSize: "40px",
           }}
         >
@@ -40,7 +42,7 @@ const AdvantageMain = () => {
                 }}
               >
                 <h5 className="card-title" style={{ color: "white",fontWeight: "400",
-                  fontFamily: "PT Sans, sans-serif" }}>
+                  fontFamily: "Gilroy-Regular" }}>
                   How Our Robots Save You Time and Money Compared to Manual
                   Diving Teams
                 </h5>
@@ -50,7 +52,7 @@ const AdvantageMain = () => {
                     color: "none",
                     textTransform: "capitalize",
                     textDecoration: "none",
-                    fontFamily: "PT Sans, sans-serif"
+                    fontFamily: "Gilroy-Regular"
                   }}
                 >
                   READ MORE&nbsp;&#9656;
@@ -81,7 +83,7 @@ const AdvantageMain = () => {
                 }}
               >
                 <h5 className="card-title" style={{ color: "white",fontWeight: "400",
-                  fontFamily: "PT Sans, sans-serif" }}>
+                  fontFamily: "Gilroy-Regular" }}>
                   Eco-Friendly Cleaning with Responsible Waste Disposal
                 </h5>
                 <Link
@@ -90,7 +92,7 @@ const AdvantageMain = () => {
                     color: "none",
                     textTransform: "capitalize",
                     textDecoration: "none",
-                  fontFamily: "PT Sans, sans-serif"
+                  fontFamily: "Gilroy-Regular"
                   }}
                 >
                   READ MORE&nbsp;&#9656;
@@ -121,7 +123,7 @@ const AdvantageMain = () => {
                 }}
               >
                 <h5 className="card-title" style={{ color: "white",fontWeight: "400",
-                  fontFamily: "PT Sans, sans-serif" }}>
+                  fontFamily: "Gilroy-Regular" }}>
                   Protecting Ships from Invasive Marine Species with Cavitation
                   Jet-Based Technology
                 </h5>
@@ -131,7 +133,7 @@ const AdvantageMain = () => {
                     color: "none",
                     textTransform: "capitalize",
                     textDecoration: "none",
-                  fontFamily: "PT Sans, sans-serif"
+                  fontFamily: "Gilroy-Regular"
                   }}
                 >
                   READ MORE&nbsp;&#9656;

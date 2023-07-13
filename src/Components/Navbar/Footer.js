@@ -14,6 +14,8 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import BusinessIcon from "@mui/icons-material/Business";
 import CallIcon from "@mui/icons-material/Call";
+import "../CSS/font-gillory.css"
+
 
 const Footer = () => {
   return (
@@ -135,7 +137,7 @@ const Footer = () => {
                   variant="body1"
                   align="center"
                   color="white"
-                  sx={{ fontFamily: "PT Sans, sans-serif" }}
+                  sx={{ fontFamily: "Gilroy-Regular" }}
                 >
                   <p style={{ fontWeight: "bold", color: "#3a92fc" }}>
                     Hull Cleaning
@@ -163,7 +165,7 @@ const Footer = () => {
                   variant="body1"
                   align="center"
                   color="white"
-                  sx={{ fontFamily: "PT Sans, sans-serif" }}
+                  sx={{ fontFamily: "Gilroy-Regular" }}
                 >
                   <p style={{ fontWeight: 700, color: "#3a92fc" }}>
                     Quick Links
@@ -192,7 +194,7 @@ const Footer = () => {
                   align="center"
                   color="white"
                   sx={{
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                   }}
                 >
                   <p style={{ fontWeight: 700, color: "#3a92fc" }}>
@@ -233,7 +235,7 @@ const Footer = () => {
                 sx={{
                   fontSize: "15px",
                   color: "white",
-                  fontFamily: "PT Sans, sans-serif",
+                  fontFamily: "Gilroy-Regular",
                 }}
               >
                 {`${new Date().getFullYear()} LOGO. All rights reserved.`}

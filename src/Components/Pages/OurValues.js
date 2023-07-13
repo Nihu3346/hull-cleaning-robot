@@ -3,6 +3,7 @@ import "./../CSS/About.css";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import "../CSS/font-gillory.css";
 
 const OurValues = () => {
   return (

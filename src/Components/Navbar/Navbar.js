@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import AdbIcon from "@mui/icons-material/Adb";
 import "../CSS/Navbar.css";
+import "../CSS/font-gillory.css";
 
 import {
   AppBar,
@@ -153,7 +154,7 @@ const DrawerAppBar = (props) => {
                   key="Home"
                   sx={{
                     color: "white",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     ":hover": {
                       color: "#3a92fc",
                     },
@@ -167,10 +168,11 @@ const DrawerAppBar = (props) => {
                   key="aboutus"
                   sx={{
                     color: "white",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     ":hover": {
                       color: "#3a92fc",
                     },
+                    ml: 5,
                   }}
                 >
                   About Us
@@ -181,10 +183,11 @@ const DrawerAppBar = (props) => {
                   key="ContactUs"
                   sx={{
                     color: "white",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     ":hover": {
                       color: "#3a92fc",
                     },
+                    ml: 5,
                   }}
                 >
                   Contact Us

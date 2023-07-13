@@ -1,20 +1,16 @@
 //react
-import React, {
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import "../CSS/SlideshowImage.css";
 import ship3 from "./../Images/ship3.png";
 import ship5 from "./../Images/ship5.jpg";
 import ship6 from "./../Images/ship7.jpg";
+import "../CSS/font-gillory.css";
 
 const Slide = ({ imageSrc, title, subtitle }) => (
   <>
     <img src={imageSrc} alt={title} />
     <div className="carousel-caption">
-      <h3 className="carousel-caption-title">{title}</h3>
+      <h3 className="carousel-caption-title" style={{fontFamily: "Gilroy-Regular"}}>{title}</h3>
       {/* <p className="carousel-caption-subtitle">{subtitle}</p> */}
     </div>
   </>
@@ -389,19 +385,31 @@ const Carousel = ({
 /************ demo *************/
 const slides = [
   {
-    title: "Revolutionize underwater maintenance with our innovative hull cleaning robots.",
+    title:
+      "Revolutionize underwater maintenance with our innovative hull cleaning robots.",
     subtitle: "First subtitle",
     image: ship3,
+    titleStyle: {
+      fontFamily: "Giloroy",
+    },
   },
   {
-    title: "Boost your vessel's performance and save on fuel costs with our advanced hull cleaning robots.",
+    title:
+      "Boost your vessel's performance and save on fuel costs with our advanced hull cleaning robots.",
     subtitle: "Second subtitle",
     image: ship5,
+    titleStyle: {
+      fontFamily: "Giloroy",
+    },
   },
   {
-    title: "Say goodbye to slow, hazardous and outdated hull cleaning methods, and hello to the future of underwater maintenance.",
+    title:
+      "Say goodbye to slow, hazardous and outdated hull cleaning methods, and hello to the future of underwater maintenance.",
     subtitle: "Third subtitle",
     image: ship6,
+    titleStyle: {
+      fontFamily: "Giloroy",
+    },
   },
 ];
 

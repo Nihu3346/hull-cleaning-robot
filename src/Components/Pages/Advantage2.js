@@ -1,6 +1,7 @@
 import drone from "./../Images/environment3.jpg";
 import { Card, CardContent, Typography, Grid } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
+import "../CSS/font-gillory.css"
 
 const Advantage2 = () => {
   const [isCardVisible, setIsCardVisible] = useState(false);
@@ -67,7 +68,7 @@ const Advantage2 = () => {
                     mb: 2,
                     color: "white",
                     fontWeight: "medium",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                   }}
                 >
                   <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
@@ -80,7 +81,7 @@ const Advantage2 = () => {
                   sx={{
                     textAlign: "justify",
                     color: "white",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     fontSize: "1.4rem",
                     mb: 1,
                   }}
@@ -99,7 +100,7 @@ const Advantage2 = () => {
                   sx={{
                     textAlign: "justify",
                     color: "white",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     fontSize: "1.4rem",
                     mb: 1,
                   }}
@@ -117,7 +118,7 @@ const Advantage2 = () => {
                   sx={{
                     textAlign: "justify",
                     color: "white",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     fontSize: "1.4rem",
                     mb: 1,
                   }}

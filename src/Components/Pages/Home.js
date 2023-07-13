@@ -7,6 +7,7 @@ import "./../CSS/InfoPanel.css";
 import "../CSS/Home.css";
 import Slideshowtext from "../Slideshow/Slideshowtext";
 import AdvantageMain from "./AdvantageMain";
+import "../CSS/font-gillory.css"
 const Home = () => {
   const [isCard1Visible, setIsCard1Visible] = useState(false);
   const [isCard2Visible, setIsCard2Visible] = useState(false);
@@ -65,104 +66,7 @@ const Home = () => {
       className="main-content-home"
     >
       <Slideshowtext />
-      {/* <Card
-        ref={card1Ref}
-        style={{
-          boxShadow: "none",
-          maxWidth: "100%",
-          height: "100%",
-          margin: "auto",
-          marginTop: "7px",
-          marginBottom: "45px",
-          backgroundColor: "#000",
-          borderRadius: 0,
-          opacity: isCard1Visible ? 1 : 0,
-          transform: isCard1Visible ? "translateY(0)" : "translateY(20px)",
-          transition: "opacity 0.5s ease, transform 0.5s ease",
-        }}
-      >
-        <CardContent>
-          <Grid container spacing={8} sx={{ p: 4 }}>
-            <Grid item xs={12} order={1} sx={{ textAlign: "center" }}>
-              <Typography
-                variant="h3"
-                sx={{
-                  mb: 2,
-                  color: "#fff",
-                  fontWeight: "medium",
-                  fontFamily: "PT Sans, sans-serif",
-                }}
-              >
-                <span style={{ fontWeight: "bold", color: "#00CED1" }}>B</span>
-                ackground
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#fff",
-                  fontFamily: "PT Sans, sans-serif",
-                  fontSize: "1.4rem",
-                  mb: 1,
-                }}
-              >
-                Hull cleaning involves removing{" "}
-                <span style={{ fontWeight: "bold", color: "#00CED1" }}>
-                  Marine Growth
-                </span>{" "}
-                and{" "}
-                <span style={{ fontWeight: "bold", color: "#00CED1" }}>
-                  Debris
-                </span>{" "}
-                from the underwater surface of a ship.
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#fff",
-                  fontFamily: "PT Sans, sans-serif",
-                  fontSize: "1.4rem",
-                  mb: 1,
-                }}
-              >
-                Manual labor-intensive hull cleaning requires divers to
-                physically scrape and clean the hull, which is{" "}
-                <span style={{ fontWeight: "bold", color: "#00CED1" }}>
-                  Time-consuming
-                </span>{" "}
-                and{" "}
-                <span style={{ fontWeight: "bold", color: "#00CED1" }}>
-                  Costly
-                </span>
-                .
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#fff",
-                  fontFamily: "PT Sans, sans-serif",
-                  fontSize: "1.4rem",
-                  mb: 1,
-                }}
-              >
-                Robotic hull cleaning offers an{" "}
-                <span style={{ fontWeight: "bold", color: "#00CED1" }}>
-                  Efficient
-                </span>{" "}
-                and{" "}
-                <span style={{ fontWeight: "bold", color: "#00CED1" }}>
-                  Cost-effective
-                </span>{" "}
-                alternative,{" "}
-                <span style={{ fontWeight: "bold", color: "#00CED1" }}>
-                  Reducing
-                </span>{" "}
-                labor requirements and improving vessel performance.
-              </Typography>
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Card> */}
-
+      
       <Card
         ref={card2Ref}
         style={{
@@ -195,7 +99,7 @@ const Home = () => {
                   mb: 2,
                   color: "black",
                   fontWeight: "medium",
-                  fontFamily: "PT Sans, sans-serif",
+                  fontFamily: "Gilroy-Regular",
                 }}
               >
                 <span style={{ fontWeight: "bold", color: "#d9c409" }}>E</span>
@@ -207,7 +111,7 @@ const Home = () => {
                 sx={{
                   textAlign: "justify",
                   color: "black",
-                  fontFamily: "PT Sans, sans-serif",
+                  fontFamily: "Gilroy-Regular",
                   fontSize: "1.4rem",
                   mb: 1,
                 }}
@@ -224,7 +128,7 @@ const Home = () => {
                 sx={{
                   textAlign: "justify",
                   color: "black",
-                  fontFamily: "PT Sans, sans-serif",
+                  fontFamily: "Gilroy-Regular",
                   fontSize: "1.4rem",
                   mb: 1,
                 }}
@@ -243,7 +147,7 @@ const Home = () => {
                 sx={{
                   textAlign: "justify",
                   color: "black",
-                  fontFamily: "PT Sans, sans-serif",
+                  fontFamily: "Gilroy-Regular",
                   fontSize: "1.4rem",
                   mb: 1,
                 }}

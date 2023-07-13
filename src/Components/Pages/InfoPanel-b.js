@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../Slideshow/Slideshowtext-bottom.css";
 import WavesTop from "../Slideshow/WavesTop";
 import WavesBottom from "../Slideshow/WavesBottom";
+import "../CSS/font-gillory.css"
 
 const InfoPanelB = () => {
   const [isCardVisible, setIsCardVisible] = useState(false);
@@ -77,7 +78,7 @@ const InfoPanelB = () => {
                     mb: 2,
                     color: "white",
                     fontWeight: "medium",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                   }}
                 >
                   <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
@@ -90,7 +91,7 @@ const InfoPanelB = () => {
                   sx={{
                     textAlign: "justify",
                     color: "white",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     fontSize: "1.4rem",
                     mb: 1,
                   }}
@@ -106,7 +107,7 @@ const InfoPanelB = () => {
                   sx={{
                     textAlign: "justify",
                     color: "white",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     fontSize: "1.4rem",
                     mb: 1,
                   }}
@@ -121,7 +122,7 @@ const InfoPanelB = () => {
                   sx={{
                     textAlign: "justify",
                     color: "white",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     fontSize: "1.4rem",
                     mb: 1,
                   }}

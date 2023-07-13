@@ -4,6 +4,7 @@ import "./Slideshowtext-bottom.css";
 import { useEffect, useRef, useState } from "react";
 import WavesBottom from "./WavesBottom";
 import SlideShowImage from "./SlideshowImage";
+import "../CSS/font-gillory.css"
 
 const Slideshowtext = () => {
   const [isCardVisible, setIsCardVisible] = useState(false);
@@ -71,7 +72,7 @@ const Slideshowtext = () => {
                     mb: 2,
                     color: "#fff",
                     fontWeight: "medium",
-                    fontFamily: "Lato, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                   }}
                 >
                   <span style={{ fontWeight: "bold", color: "#00CED1" }}>
@@ -83,7 +84,7 @@ const Slideshowtext = () => {
                   variant="body1"
                   sx={{
                     color: "#fff",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     fontSize: "1.4rem",
                     mb: 1,
                   }}
@@ -102,7 +103,7 @@ const Slideshowtext = () => {
                   variant="body1"
                   sx={{
                     color: "#fff",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     fontSize: "1.4rem",
                     mb: 1,
                   }}
@@ -122,7 +123,7 @@ const Slideshowtext = () => {
                   variant="body1"
                   sx={{
                     color: "#fff",
-                    fontFamily: "PT Sans, sans-serif",
+                    fontFamily: "Gilroy-Regular",
                     fontSize: "1.4rem",
                     mb: 1,
                   }}

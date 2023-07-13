@@ -2,7 +2,7 @@
   color: #20b5cd;
 }
  .our-values-title span {
-  font-family: Poppins;
+  font-family: Gilroy-Regular;
   font-weight: 700;
   font-size: 62px;
   line-height: 95px;
@@ -12,13 +12,13 @@
 }
 .team-inner .our-values-title span {
   color: #fff;
-  font-family: Poppins;
+  font-family: Gilroy-Regular;
   font-weight: 700;
   font-size: 62px;
   line-height: 95px;
 }
 .hor-line {
-  border-top: 6px solid #20b5cd;
+  border-top: 5px solid #20b5cd;
   width: 50px;
 }
 .team-container {
@@ -46,6 +46,7 @@
 }
 .row {
   padding: 4% 1% 0;
+  margin-bottom: 5%;
 }
 .card-title{
   font-weight: 700;
@@ -54,12 +55,12 @@
     position: relative;
     padding-bottom: 4%;
     margin-bottom: 4%;
-    font-family: Poppins;
+    font-family: Gilroy-Regular;
 }
 .card-content{
   font-size: 22px;
   line-height: 35px;
-  font-family: Poppins;
+  font-family: Gilroy-Regular;
   color: #999;
 }
     

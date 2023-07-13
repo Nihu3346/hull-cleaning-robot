@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../Fonts/gilroy/Gilroy-Regular.ttf") format("truetype"); /* Replace the path with the actual location of your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Gilroy-Regular", sans-serif; /* Apply the font to the desired elements */
+}

@@ -1,6 +1,7 @@
 import { Card, CardContent, Typography, Grid } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import roboBG from "../Images/hull_1.png";
+import "../CSS/font-gillory.css"
 
 const Advantage3 = () => {
   const [isCard2Visible, setIsCard2Visible] = useState(false);
@@ -71,7 +72,7 @@ const Advantage3 = () => {
                   mb: 2,
                   color: "black",
                   fontWeight: "medium",
-                  fontFamily: "PT Sans, sans-serif",
+                  fontFamily: "Gilroy-Regular",
                 }}
               >
                 <span style={{ fontWeight: "bold", color: "#d9c409" }}>C</span>
@@ -82,7 +83,7 @@ const Advantage3 = () => {
                 sx={{
                   textAlign: "justify",
                   color: "black",
-                  fontFamily: "PT Sans, sans-serif",
+                  fontFamily: "Gilroy-Regular",
                   fontSize: "1.4rem",
                   mb: 1,
                 }}
@@ -99,7 +100,7 @@ const Advantage3 = () => {
                 sx={{
                   textAlign: "justify",
                   color: "black",
-                  fontFamily: "PT Sans, sans-serif",
+                  fontFamily: "Gilroy-Regular",
                   fontSize: "1.4rem",
                   mb: 1,
                 }}
