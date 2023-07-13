@@ -53,30 +53,6 @@ const CarouselButton = ({
   </div>
 );
 
-const CarouselIndicators = ({
-  position,
-  nextActiveIndex,
-  indicatorsColor,
-  clickHandler,
-  slides,
-}) => (
-  <ol className={`carousel-indicators ${position}`}>
-    {slides.map((el, i) => (
-      <li
-        key={i}
-        className={i === nextActiveIndex ? "active" : ""}
-        //eslint-ignore-next-line
-        style={{ "--indicatorsColor": indicatorsColor }}
-        onClick={() => {
-          if (slides.length !== 1 && i !== nextActiveIndex) {
-            clickHandler(i);
-          }
-        }}
-      />
-    ))}
-  </ol>
-);
-
 const Carousel = ({
   autoPlay = false,
   activeSlideDuration = 3000, //how long a slide will be displayed
@@ -260,24 +236,6 @@ const Carousel = ({
     // if we are at the first slide set the next active index to the last slide
     if (nextActiveI < 0) {
       nextActiveI = slides.length - 1;
-    }
-
-    // restart auto sliding
-    restartAutoSliding(nextActiveI);
-  };
-
-  const onCarouselIndicator = (index) => {
-    //stop auto sliding
-    stopAutoSliding();
-
-    // set the next active index
-    let nextActiveI = index;
-
-    // set the direction of the carousel based on the clicked indicator index
-    if (nextActiveI < activeIndex) {
-      direction.current = "to-right";
-    } else {
-      direction.current = "to-left";
     }
 
     // restart auto sliding

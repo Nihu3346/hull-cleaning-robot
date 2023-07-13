@@ -1,6 +1,4 @@
-import { FitScreen } from "@mui/icons-material";
 import { React } from "react";
-import robot from "./../Images/robot1.jpg";
 const InfoPanelA = () => {
   return (
     <>

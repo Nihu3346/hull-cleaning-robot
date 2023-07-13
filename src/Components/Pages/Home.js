@@ -6,15 +6,7 @@ import InfoPanelB from "./InfoPanel-b";
 import "./../CSS/InfoPanel.css";
 import "../CSS/Home.css";
 import Slideshowtext from "../Slideshow/Slideshowtext";
-import Advantage1 from "./Advantage1";
-import Advantage2 from "./Advantage2";
-import hulcl from "./../Images/shutterstock_175341791.jpg";
-
-import Advantage3 from "./Advantage3";
 import AdvantageMain from "./AdvantageMain";
-import AboutUS from "./AboutUs";
-import Waves from "../Slideshow/WavesBottom";
-import SlideShowImage from "../Slideshow/SlideshowImage";
 const Home = () => {
   const [isCard1Visible, setIsCard1Visible] = useState(false);
   const [isCard2Visible, setIsCard2Visible] = useState(false);

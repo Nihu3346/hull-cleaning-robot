@@ -1,5 +1,5 @@
 import { Card } from "@mui/material";
-import { Box, CardContent, Grid, Typography } from "@mui/material";
+import { CardContent, Grid, Typography } from "@mui/material";
 import "./Slideshowtext-bottom.css";
 import { useEffect, useRef, useState } from "react";
 import WavesBottom from "./WavesBottom";
