@@ -75,10 +75,10 @@ const Slideshowtext = () => {
                     fontFamily: "Gilroy-Regular",
                   }}
                 >
-                  <span style={{ fontWeight: "bold", color: "#00CED1" }}>
+                  {/* <span style={{ fontWeight: "bold", color: "#00CED1" }}>
                     B
-                  </span>
-                  ackground
+                  </span> */}
+                  Background
                 </Typography>
                 <Typography
                   variant="body1"

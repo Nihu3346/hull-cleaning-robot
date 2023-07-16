@@ -8,6 +8,7 @@ import "../CSS/Home.css";
 import Advantage1 from "./Advantage1";
 import Advantage2 from "./Advantage2";
 import Advantage3 from "./Advantage3";
+import "../CSS/font-gillory.css";
 
 const HullClean = () => {
   return (

@@ -71,10 +71,10 @@ const Advantage2 = () => {
                     fontFamily: "Gilroy-Regular",
                   }}
                 >
-                  <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
+                  {/* <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
                     E
-                  </span>
-                  co-Friendly Cleaning with Responsible Waste Disposal
+                  </span> */}
+                  Eco-Friendly Cleaning with Responsible Waste Disposal
                 </Typography>
                 <Typography
                   variant="body1"

@@ -81,10 +81,10 @@ const InfoPanelB = () => {
                     fontFamily: "Gilroy-Regular",
                   }}
                 >
-                  <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
+                  {/* <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
                     W
-                  </span>
-                  hy choose robot?
+                  </span> */}
+                  Why choose robot?
                 </Typography>
                 <Typography
                   variant="body1"

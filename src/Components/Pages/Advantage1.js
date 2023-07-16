@@ -76,8 +76,8 @@ const Advantage1 = () => {
                   fontFamily: "Gilroy-Regular",
                 }}
               >
-                <span style={{ fontWeight: "bold", color: "#d9c409" }}>S</span>
-                ave You Time and Money
+                {/* <span style={{ fontWeight: "bold", color: "#d9c409" }}>S</span> */}
+                Save You Time and Money
               </Typography>
 
               <Typography

@@ -27,49 +27,49 @@ const teamMembers = [
     title: "Electrical Engineer",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, tellus eget dictum consequat, elit mauris vestibulum risus, vel congue libero lectus in magna. Phasellus imperdiet sem vel libero varius, in eleifend risus efficitur. Sed non orci eu libero dictum sodales.",
     imgSrc: mayank,
-    LinkedIn: "https://www.linkedin.com/in/sarthak-vaishnav-38a22117a/"
+    LinkedIn: "https://www.linkedin.com/in/mbkarn/"
   },
   {
     name: "Savanth Gattu",
     title: "AI/ML Engineer",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, tellus eget dictum consequat, elit mauris vestibulum risus, vel congue libero lectus in magna. Phasellus imperdiet sem vel libero varius, in eleifend risus efficitur. Sed non orci eu libero dictum sodales.",
     imgSrc: savan,
-    LinkedIn: "https://www.linkedin.com/in/sarthak-vaishnav-38a22117a/"
+    LinkedIn: "https://www.linkedin.com/in/savanth-gattu-11b66915a/"
   },
   {
     name: "Aylmer Britto Rex Harison",
     title: "AI/ML Designer",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, tellus eget dictum consequat, elit mauris vestibulum risus, vel congue libero lectus in magna. Phasellus imperdiet sem vel libero varius, in eleifend risus efficitur. Sed non orci eu libero dictum sodales.",
     imgSrc: aylmer,
-    LinkedIn: "https://www.linkedin.com/in/sarthak-vaishnav-38a22117a/"
+    LinkedIn: "https://www.linkedin.com/in/aylmerbritto/"
   },
   {
     name: "Adityaraj Bhatt",
     title: "Operational and sourcing",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, tellus eget dictum consequat, elit mauris vestibulum risus, vel congue libero lectus in magna. Phasellus imperdiet sem vel libero varius, in eleifend risus efficitur. Sed non orci eu libero dictum sodales.",
     imgSrc: adiraj,
-    LinkedIn: "https://www.linkedin.com/in/sarthak-vaishnav-38a22117a/"
+    LinkedIn: "https://www.linkedin.com/in/adityaraj5585/"
   },
   {
     name: "Sumukh Shrote",
     title: "Intern",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, tellus eget dictum consequat, elit mauris vestibulum risus, vel congue libero lectus in magna. Phasellus imperdiet sem vel libero varius, in eleifend risus efficitur. Sed non orci eu libero dictum sodales.",
     imgSrc: sumukh,
-    LinkedIn: "https://www.linkedin.com/in/sarthak-vaishnav-38a22117a/"
+    LinkedIn: "https://www.linkedin.com/in/sumukh-shrote/"
   },
   {
     name: "Shreya Ragi ",
     title: "Intern",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, tellus eget dictum consequat, elit mauris vestibulum risus, vel congue libero lectus in magna. Phasellus imperdiet sem vel libero varius, in eleifend risus efficitur. Sed non orci eu libero dictum sodales.",
     imgSrc: shreya,
-    LinkedIn: "https://www.linkedin.com/in/sarthak-vaishnav-38a22117a/"
+    LinkedIn: "https://www.linkedin.com/in/shreya-ragi/"
   },
   {
     name: "Prasshanth C.V",
     title: "Intern",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, tellus eget dictum consequat, elit mauris vestibulum risus, vel congue libero lectus in magna. Phasellus imperdiet sem vel libero varius, in eleifend risus efficitur. Sed non orci eu libero dictum sodales.",
     imgSrc: prassanth,
-    LinkedIn: "https://www.linkedin.com/in/sarthak-vaishnav-38a22117a/"
+    LinkedIn: "https://www.linkedin.com/in/prasshanth-c-v/"
   },
 ];
 

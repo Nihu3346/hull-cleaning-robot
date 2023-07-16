@@ -102,8 +102,8 @@ const Home = () => {
                   fontFamily: "Gilroy-Regular",
                 }}
               >
-                <span style={{ fontWeight: "bold", color: "#d9c409" }}>E</span>
-                conomic Benefits
+                {/* <span style={{ fontWeight: "bold", color: "#d9c409" }}>E</span> */}
+                Economic Benefits
               </Typography>
 
               <Typography
