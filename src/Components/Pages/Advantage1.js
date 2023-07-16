@@ -77,7 +77,8 @@ const Advantage1 = () => {
                 }}
               >
                 {/* <span style={{ fontWeight: "bold", color: "#d9c409" }}>S</span> */}
-                Save You Time and Money
+                
+                <span style={{ fontWeight: "bold", color: "#800080" }}>Save You Time and Money</span>
               </Typography>
 
               <Typography

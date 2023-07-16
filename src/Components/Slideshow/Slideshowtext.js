@@ -78,7 +78,7 @@ const Slideshowtext = () => {
                   {/* <span style={{ fontWeight: "bold", color: "#00CED1" }}>
                     B
                   </span> */}
-                  Background
+                  <span style={{ fontWeight: "bold", color: "#E6E6FA" }}>Background</span>
                 </Typography>
                 <Typography
                   variant="body1"

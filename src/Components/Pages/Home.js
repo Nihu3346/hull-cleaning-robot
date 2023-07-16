@@ -103,7 +103,7 @@ const Home = () => {
                 }}
               >
                 {/* <span style={{ fontWeight: "bold", color: "#d9c409" }}>E</span> */}
-                Economic Benefits
+                <span style={{ fontWeight: "bold", color: "#556B2F" }}>Economic Benefits</span>
               </Typography>
 
               <Typography

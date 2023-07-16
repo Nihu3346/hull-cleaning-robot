@@ -75,8 +75,8 @@ const Advantage3 = () => {
                   fontFamily: "Gilroy-Regular",
                 }}
               >
-                {/* <span style={{ fontWeight: "bold", color: "#d9c409" }}>C</span> */}
-                Cavitation Jets
+                {/* <span style={{ fontWeight: "bold", color: "#d9c409" }}>C</span> */} 
+                <span style={{ fontWeight: "bold", color: "#008080" }}>Cavitation Jets</span>
               </Typography>
               <Typography
                 variant="body1"

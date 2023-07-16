@@ -74,7 +74,9 @@ const Advantage2 = () => {
                   {/* <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
                     E
                   </span> */}
+                  <span style={{ fontWeight: "bold", color: "#E6E6FA" }}>
                   Eco-Friendly Cleaning with Responsible Waste Disposal
+                  </span>
                 </Typography>
                 <Typography
                   variant="body1"

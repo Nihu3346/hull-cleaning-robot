@@ -84,7 +84,7 @@ const InfoPanelB = () => {
                   {/* <span style={{ fontWeight: "bold", color: "#3a92fc" }}>
                     W
                   </span> */}
-                  Why choose robot?
+                  <span style={{ fontWeight: "bold", color: "#E6E6FA" }}>Why choose robot?</span>
                 </Typography>
                 <Typography
                   variant="body1"
